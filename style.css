@@ -37,13 +37,72 @@ influencer part style
 .influencer-section{
     display: flex;
 }
-h1{
+/* influencer-title style  */
+.influencer-title{
+    font-size: 50px;
+    white-space: nowrap;
+    position: relative;
+
+}
+.influencer-title::before{
+    content: 'Start your Journey as ';
+    position: absolute;
+    top: 0;
+    left: 0;
+    color: blue;
+    animation: typing 3s linear infinite;
+}
+@keyframes typing {
+    0%{
+        content:'St|' ;
+    }
+    7%{
+        content:'Star|' ;
+    }
+    14%{
+        content:'Start y|' ;
+    }
+    21%{
+        content:'Start your|' ;
+    }
+    28%{
+        content:'Start your Jou|' ;
+    }
+    35%{
+        content:'Start your Journe|' ;
+    }
+    42%{
+        content:'Start your Journey as' ;
+    }
+    42%{
+        content:'Start your Journey as' ;
+    }
+    65%{
+        content:'Start your Journe|' ;
+    }
+    72%{
+        content:'Start your Jou|' ;
+    }
+    79%{
+        content:'Start your|' ;
+    }
+    86%{
+        content:'Start y|' ;
+    }
+    93%{
+        content:'Star|' ;
+    }
+    100%{
+        content:'St|' ;
+    }
+}
+/* h1{
     font-size: 50px;
     font-weight: 700;
     line-height: 70px;
     white-space:nowrap;
     margin-bottom: 0;
-}
+} */
 button{
     color: #FFFFFF;
     font-size: 16px;
