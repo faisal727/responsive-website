@@ -126,3 +126,36 @@ p{
     float: right;
     margin: 50px 110px 0 0;
 }
+/* -------------------
+optional part styles 
+---------------------- */
+article{
+    display: flex;
+}
+article>div>img{
+    width: 400px;
+    height: 270px;
+    border-radius: 7px;
+}
+/*-------
+ footer style 
+----------------- */
+footer{
+    color: #FFFFFF;
+    background-color: #0A0826;
+    width:1440px ;
+    height: 240px;
+
+}
+footer>div{
+    text-align: center;
+    padding-top: 50px;
+   
+}
+.fab{
+    border-radius: 50%;
+    width: 32px;
+    height: 32px;
+    font-size: 17px;
+    margin-left: 16px;
+}
