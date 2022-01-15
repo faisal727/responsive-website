@@ -10,14 +10,23 @@ body{
     overflow-x: hidden;
    margin: 0;
 }
+.all-section{
+    width: 90%;
+    margin: 0 auto;
+}
 /*---------------------------
  navbar style 
 --------------------- */
+header{
+    width: 90%;
+    margin: 0 auto;
+}
 nav{
+    margin: 40px px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin:60px 120px 0 120px;
+    /* margin:60px 120px 0 120px; */
 }
 nav a{
     font-weight: 600;
@@ -35,7 +44,9 @@ nav a{
 influencer part style
 --------------------  */
 .influencer-section{
-    display: flex;
+    justify-items: space-between;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
 }
 /* influencer-title style  */
 .influencer-title{
@@ -115,9 +126,9 @@ padding:10px 24px;
 
 }
 .influencer-blog{
-    width:582px ;
+    /* width:582px ;
     height:270px ;
-    margin: 100px 133px 0 120px;
+    margin: 100px 133px 0 120px; */
 }
 .influencer-blog p{
 color: var(--main-text-color);
@@ -127,32 +138,38 @@ line-height: 24px;
 margin-top: 0;
 }
 .influencer-image{
-    width: 475px;
-    height: 475px;
-    margin: 50px 132px 0 0;
+    text-align: center;
+    
+    /* height: 475px; */
+    /* margin: 50px 132px 0 0; */ 
+}
+.influencer-image img{
+    width: 100%;
+    max-width: 475px;
 }
 /* -----------------------
 logos style
 ----------------------  */
 .container{
    
-    width: 1110px;
-    height: 110px;
+    /* width: 1110px;  */
+    /* height: 110px; */
     border-bottom: 2px solid gray;
     border-top: 2px solid gray;
-    margin: 100px 165px 100px 165px;
+    /* margin: 100px 165px 100px 165px; */
 }
 .logos-container{
+margin: 40px 0px;
     display: flex;
-    justify-content: center;
-    margin: 36px 62px 36px 62px;
+    justify-content: space-evenly;
+    /* margin: 36px 62px 36px 62px; */
   
    
 }
 .logo{
     width: 85px;
     height: 26px;
-   margin-right: 61px;
+   /* margin-right: 61px; */
 }
 
 /* -------------
@@ -164,7 +181,9 @@ blogs styles
     font-weight: 600;
 }
 .blogs{
-     margin: 0 196px 0 196px; 
+     /* margin: 0 196px 0 196px;  */
+     margin-bottom: 60px;
+     justify-items: center;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-row-gap: 30px;
@@ -207,14 +226,15 @@ p{
     font-weight: 700;
     color:#E02C6D ;
     float: right;
-    margin: 50px 110px 0 0;
+    /* margin: 50px 110px 0 0; */
 } 
 /* -------------------
 optional part styles 
 ---------------------- */
 article{
     display: flex;
-    margin: 100px 165px 100px 165px;
+    margin-bottom: 60px;
+    /* margin: 100px 165px 100px 165px; */
 
 } 
 .optional-blog{
@@ -232,6 +252,7 @@ article{
     height: 250px;
     border-radius: 7px;
     margin-right: 96px; 
+   
 }
 /*-------
  footer style 
@@ -253,5 +274,27 @@ footer>div{
     width: 32px;
     height: 32px;
     font-size: 17px;
-    margin-left: 16px;
+    /* margin-left: 16px; */
 }
+/* ---------------
+----------------------
+media queries
+
+------------------
+--------------------  */
+/* mobile device  */
+@media only screen and (max-width:688px){
+    .influencer-section{
+
+       
+       grid-template-columns: repeat(1, 1fr);
+        background-color: tomato;
+    }
+    .influencer-image img{
+        max-width: 200px;
+    }
+    .blogs{
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+
